@@ -12,3 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Provider>
   </React.StrictMode>,
 )
+
+/*Import the Provider component from the react-redux library, which allows the Redux store to be accessed by all components in the application.
+
+Import the Redux store from the store.js file.
+
+Wrap the App with the Provider component and pass the Redux store as a prop. This allows every component access to the details of store.js.*/
