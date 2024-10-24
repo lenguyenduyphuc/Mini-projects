@@ -1,0 +1,262 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: black; /* Set text color to black */
+}
+
+/* Navbar */
+.navbar {
+    background-color: hsl(115, 85%, 30%);
+    color: black !important; /* Set text color to black */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navbar .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar .ul div a {
+    color: black; /* Set text color to black */
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Set text color to black */
+}
+
+.mainCategoryDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Set text color to black */
+}
+
+/* Product Card */
+.product-card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(26.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    gap: 20px;
+    color: black; /* Set text color to black */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black; /* Set text color to black */
+}
+
+.product-price {
+    color: black; /* Set text color to black */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: 200px;
+}
+
+.product-button {
+    background-color: hsl(115, 85%, 30%);
+    color: black; /* Set text color to black */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.product-button:hover {
+    background-color: hsl(115, 85%, 30%);
+}
+
+.product-button.added-to-cart {
+    background-color: grey;
+}
+
+/* Sale badge */
+.product-card::before {
+    content: "SALE";
+    background-color: #e74c3c;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border-radius: 0 0 0 5px;
+}
+
+.tag_home_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    color: black; /* Set text color to black */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tag_home_link h3 {
+    font-size: 30px;
+    color: black; /* Set text color to black */
+}
+
+.tag a {
+    text-decoration: none;
+    color: black; /* Set text color to black */
+}
+
+.tag {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag img {
+    height: 70px;
+    width: 70px;
+    border-radius: 70%;
+}
+
+.luxury {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    font-size: 19px;
+    color: black; /* Set text color to black */
+}
+
+.cart {
+    color: black; /* Set text color to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart_quantity_count {
+    margin-top: 16px;
+    margin-left: 27px;
+    position: absolute;
+    font-size: 29px;
+    color: black; /* Set text color to black */
+}
+
+.plantname_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Set text color to black */
+}
+
+.plant_heading {
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid rgb(5, 4, 4);
+    border-left: none;
+    border-right: none;
+    color: black; /* Set text color to black */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tag {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ul div {
+        text-align: center;
+    }
+}
+
+/* Button hover effect */
+.product-button {
+    background-color: hsl(115, 85%, 30%);
+    color: black; /* Set text color to black */
+}
+
+.product-button:hover {
+    background-color: hsl(115, 85%, 30%);
+}
+
+.product-button.added-to-cart {
+    background-color: grey;
+}
+
+/* Additional Media Queries */
+@media (max-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+}
